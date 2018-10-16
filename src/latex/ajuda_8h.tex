@@ -1,0 +1,479 @@
+\hypertarget{ajuda_8h}{\section{ajuda.\+h File Reference}
+\label{ajuda_8h}\index{ajuda.\+h@{ajuda.\+h}}
+}
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\\*
+Include dependency graph for ajuda.\+h\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ajuda_8h_a1036e72a21edad105fbc7cbba7bd8bc7}{comparar\+\_\+estados} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} a, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} b)
+\begin{DoxyCompactList}\small\item\em Função que compara a grelha de dois estados. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a00e7e1f92a4742614292132a8a34d5a4}{check\+\_\+preenchido} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que verifica se o estado tem a grelha totalmente preenchida, sem V\+A\+Z\+I\+O. \end{DoxyCompactList}\item 
+V\+A\+L\+O\+R \hyperlink{ajuda_8h_a9ef095876aef5ebc17104a169aeec5e2}{contraria} (V\+A\+L\+O\+R v)
+\begin{DoxyCompactList}\small\item\em Função returna o V\+A\+L\+O\+R contrario e sem ser F\+I\+X\+O. ex.\+: F\+I\+X\+O\+\_\+\+O -\/$>$ S\+O\+L\+\_\+\+X $\vert$$\vert$ S\+O\+L\+\_\+\+X -\/$>$ S\+O\+L\+\_\+\+O. \end{DoxyCompactList}\item 
+V\+A\+L\+O\+R \hyperlink{ajuda_8h_ab1f409df578fb7918ddc9053c0d635ac}{bloqueada2sol} (V\+A\+L\+O\+R v)
+\begin{DoxyCompactList}\small\item\em Função trasnforma V\+A\+L\+O\+R F\+I\+X\+O\+\_\+\+O e F\+I\+X\+O\+\_\+\+X em S\+O\+L\+\_\+\+O e S\+O\+L\+\_\+\+X, resptivamente. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a17662afd90bbbbce353ada5dc3cf9390}{ajuda\+\_\+diagonal\+\_\+esq} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que procura padroes na diagonal e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a5996557d20e8145bd7a90eb180fe05d9}{ajuda\+\_\+diagonal\+\_\+dir} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que procura padroes na diagonal e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a969959a75e54eb67f6eeea9fe51ec658}{ajuda\+\_\+vertical} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que procura padroes na vertical e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a6aab21754cd2ee20046e0316752b94f8}{ajuda\+\_\+horizontal} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que procura padroes na horizontal e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} \hyperlink{ajuda_8h_ac26508a8ba39aa9ab6a5450cf01b504b}{ajuda} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que hierarquiza as funções de ajudas. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} \hyperlink{ajuda_8h_a2513c8aaa6b03c8b192b47f3aa700adf}{buscar\+\_\+raw\+\_\+current\+\_\+level} ()
+\begin{DoxyCompactList}\small\item\em Função que lê a partir de um ficheiro o estado inicial do puzzle. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} \hyperlink{ajuda_8h_a58db0764a1c7edb36f2c793ff5b160a5}{solucao\+\_\+puzzle} ()
+\begin{DoxyCompactList}\small\item\em Função que utiliza as funções de ajudas anteriores para chegar à solução do puzzle. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_abc9aae454a8afcf9e7c5a7d2438f0aa0}{ajuda\+\_\+diagonal\+\_\+esq\+\_\+better} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} raw)
+\begin{DoxyCompactList}\small\item\em Esta função faz o mesmo que a função ajida\+\_\+diagonal\+\_\+esq com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a6812d6d1a71e6f53447efc2895194482}{ajuda\+\_\+diagonal\+\_\+dir\+\_\+better} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} raw)
+\begin{DoxyCompactList}\small\item\em Esta função faz o mesmo que a função ajida\+\_\+diagonal\+\_\+dir com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a5a533f2379f7d3a5576bfad163773154}{ajuda\+\_\+vertical\+\_\+better} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} raw)
+\begin{DoxyCompactList}\small\item\em Esta função faz o mesmo que a função ajida\+\_\+vertical com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a7f49a368feb3092547fb632fd20cc8e7}{ajuda\+\_\+horizontal\+\_\+better} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} $\ast$e, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} raw)
+\begin{DoxyCompactList}\small\item\em Esta função faz o mesmo que a função ajida\+\_\+horizontal com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} \hyperlink{ajuda_8h_a661996439ec2543bb1bd6a3ebbf8b8c4}{ajuda\+\_\+better} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que hierarquiza as funções de ajudas(better). \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_aaf2beaaa8ce32ca7b5d939e01f70a0ba}{valido\+\_\+vertical} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que procura três peças iguais seguidas verticalmente para testar se o puzzle è válido. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a903bac385e5ebcc39f30ade8c4550b37}{valido\+\_\+horizontal} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que procura três peças iguais seguidas horizontalmente para testar se o puzzle è válido. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a979580be04792def60ffe64e4e6bfea3}{valido\+\_\+diagonal\+\_\+esq} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que procura três peças iguais seguidas diagonalmente para testar se o puzzle è válido. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_ade87ec2ee191ace3d6e396de013bc5b6}{valido\+\_\+diagonal\+\_\+dir} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que procura três peças iguais seguidas diagonalmente para testar se o puzzle è válido. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_afbf6a9fed5fb8308570486fba383b0ed}{valido\+\_\+diagonal} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que procura se ambas as funções que testam a validade do puzzle na diagonal devolvlem verdadeiro e em caso afirmativo devolve també verdadeiro. \end{DoxyCompactList}\item 
+int \hyperlink{ajuda_8h_a4a36264eb48117d32fabea88bba272a2}{puzzle\+\_\+valido} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} e)
+\begin{DoxyCompactList}\small\item\em Função que chama todas as funções que testam a validade do puzzle e com base nos resultados destas decide se o puzzle è ou não vàlido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definição de funções que resolvem/dão hints ao puzzle e de funções que verificam se o puzzle è válido 
+
+\subsection{Function Documentation}
+\hypertarget{ajuda_8h_ac26508a8ba39aa9ab6a5450cf01b504b}{\index{ajuda.\+h@{ajuda.\+h}!ajuda@{ajuda}}
+\index{ajuda@{ajuda}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+S\+T\+A\+D\+O} ajuda (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_ac26508a8ba39aa9ab6a5450cf01b504b}
+
+
+Função que hierarquiza as funções de ajudas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O estado alterado depois de dada a ajuda. 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a661996439ec2543bb1bd6a3ebbf8b8c4}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+better@{ajuda\+\_\+better}}
+\index{ajuda\+\_\+better@{ajuda\+\_\+better}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+better}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+S\+T\+A\+D\+O} ajuda\+\_\+better (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a661996439ec2543bb1bd6a3ebbf8b8c4}
+
+
+Função que hierarquiza as funções de ajudas(better). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O estado alterado depois de dada a ajuda. 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a5996557d20e8145bd7a90eb180fe05d9}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+diagonal\+\_\+dir@{ajuda\+\_\+diagonal\+\_\+dir}}
+\index{ajuda\+\_\+diagonal\+\_\+dir@{ajuda\+\_\+diagonal\+\_\+dir}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+diagonal\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+diagonal\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a5996557d20e8145bd7a90eb180fe05d9}
+
+
+Função que procura padroes na diagonal e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se alterar o estado return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a6812d6d1a71e6f53447efc2895194482}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+diagonal\+\_\+dir\+\_\+better@{ajuda\+\_\+diagonal\+\_\+dir\+\_\+better}}
+\index{ajuda\+\_\+diagonal\+\_\+dir\+\_\+better@{ajuda\+\_\+diagonal\+\_\+dir\+\_\+better}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+diagonal\+\_\+dir\+\_\+better}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+diagonal\+\_\+dir\+\_\+better (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{raw}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a6812d6d1a71e6f53447efc2895194482}
+
+
+Esta função faz o mesmo que a função ajida\+\_\+diagonal\+\_\+dir com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado atual do puzzle \\
+\hline
+{\em raw} & O estado do puzzle resolvido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O estado alterado depois de dada a ajuda. 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a17662afd90bbbbce353ada5dc3cf9390}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+diagonal\+\_\+esq@{ajuda\+\_\+diagonal\+\_\+esq}}
+\index{ajuda\+\_\+diagonal\+\_\+esq@{ajuda\+\_\+diagonal\+\_\+esq}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+diagonal\+\_\+esq}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+diagonal\+\_\+esq (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a17662afd90bbbbce353ada5dc3cf9390}
+
+
+Função que procura padroes na diagonal e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se alterar o estado return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_abc9aae454a8afcf9e7c5a7d2438f0aa0}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+diagonal\+\_\+esq\+\_\+better@{ajuda\+\_\+diagonal\+\_\+esq\+\_\+better}}
+\index{ajuda\+\_\+diagonal\+\_\+esq\+\_\+better@{ajuda\+\_\+diagonal\+\_\+esq\+\_\+better}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+diagonal\+\_\+esq\+\_\+better}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+diagonal\+\_\+esq\+\_\+better (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{raw}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_abc9aae454a8afcf9e7c5a7d2438f0aa0}
+
+
+Esta função faz o mesmo que a função ajida\+\_\+diagonal\+\_\+esq com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado atual do puzzle \\
+\hline
+{\em raw} & O estado do puzzle resolvido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O estado alterado depois de dada a ajuda. 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a6aab21754cd2ee20046e0316752b94f8}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+horizontal@{ajuda\+\_\+horizontal}}
+\index{ajuda\+\_\+horizontal@{ajuda\+\_\+horizontal}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+horizontal}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+horizontal (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a6aab21754cd2ee20046e0316752b94f8}
+
+
+Função que procura padroes na horizontal e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se alterar o estado return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a7f49a368feb3092547fb632fd20cc8e7}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+horizontal\+\_\+better@{ajuda\+\_\+horizontal\+\_\+better}}
+\index{ajuda\+\_\+horizontal\+\_\+better@{ajuda\+\_\+horizontal\+\_\+better}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+horizontal\+\_\+better}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+horizontal\+\_\+better (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{raw}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a7f49a368feb3092547fb632fd20cc8e7}
+
+
+Esta função faz o mesmo que a função ajida\+\_\+horizontal com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado atual do puzzle \\
+\hline
+{\em raw} & O estado do puzzle resolvido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O estado alterado depois de dada a ajuda. 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a969959a75e54eb67f6eeea9fe51ec658}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+vertical@{ajuda\+\_\+vertical}}
+\index{ajuda\+\_\+vertical@{ajuda\+\_\+vertical}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+vertical}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+vertical (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a969959a75e54eb67f6eeea9fe51ec658}
+
+
+Função que procura padroes na vertical e caso encontre duas peças iguais seguidas ou intercaladas preenche o espaço vazio antes depos ou entre as peças com a peça contrária. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se alterar o estado return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a5a533f2379f7d3a5576bfad163773154}{\index{ajuda.\+h@{ajuda.\+h}!ajuda\+\_\+vertical\+\_\+better@{ajuda\+\_\+vertical\+\_\+better}}
+\index{ajuda\+\_\+vertical\+\_\+better@{ajuda\+\_\+vertical\+\_\+better}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{ajuda\+\_\+vertical\+\_\+better}]{\setlength{\rightskip}{0pt plus 5cm}int ajuda\+\_\+vertical\+\_\+better (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O} $\ast$}]{e, }
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{raw}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a5a533f2379f7d3a5576bfad163773154}
+
+
+Esta função faz o mesmo que a função ajida\+\_\+vertical com e exceção que compara cada peça do estado atual do puzzle com o pzzle resolvido e caso encontre diferenças altera a peça onde encontrou as diferenças para V\+A\+Z\+I\+A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado atual do puzzle \\
+\hline
+{\em raw} & O estado do puzzle resolvido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O estado alterado depois de dada a ajuda. 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_ab1f409df578fb7918ddc9053c0d635ac}{\index{ajuda.\+h@{ajuda.\+h}!bloqueada2sol@{bloqueada2sol}}
+\index{bloqueada2sol@{bloqueada2sol}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{bloqueada2sol}]{\setlength{\rightskip}{0pt plus 5cm}V\+A\+L\+O\+R bloqueada2sol (
+\begin{DoxyParamCaption}
+\item[{V\+A\+L\+O\+R}]{v}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_ab1f409df578fb7918ddc9053c0d635ac}
+
+
+Função trasnforma V\+A\+L\+O\+R F\+I\+X\+O\+\_\+\+O e F\+I\+X\+O\+\_\+\+X em S\+O\+L\+\_\+\+O e S\+O\+L\+\_\+\+X, resptivamente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Um V\+A\+L\+O\+R \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+um V\+A\+L\+O\+R 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a2513c8aaa6b03c8b192b47f3aa700adf}{\index{ajuda.\+h@{ajuda.\+h}!buscar\+\_\+raw\+\_\+current\+\_\+level@{buscar\+\_\+raw\+\_\+current\+\_\+level}}
+\index{buscar\+\_\+raw\+\_\+current\+\_\+level@{buscar\+\_\+raw\+\_\+current\+\_\+level}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{buscar\+\_\+raw\+\_\+current\+\_\+level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+S\+T\+A\+D\+O} buscar\+\_\+raw\+\_\+current\+\_\+level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a2513c8aaa6b03c8b192b47f3aa700adf}
+
+
+Função que lê a partir de um ficheiro o estado inicial do puzzle. 
+
+\begin{DoxyReturn}{Returns}
+O estado inicial 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a00e7e1f92a4742614292132a8a34d5a4}{\index{ajuda.\+h@{ajuda.\+h}!check\+\_\+preenchido@{check\+\_\+preenchido}}
+\index{check\+\_\+preenchido@{check\+\_\+preenchido}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{check\+\_\+preenchido}]{\setlength{\rightskip}{0pt plus 5cm}int check\+\_\+preenchido (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a00e7e1f92a4742614292132a8a34d5a4}
+
+
+Função que verifica se o estado tem a grelha totalmente preenchida, sem V\+A\+Z\+I\+O. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em O} & Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se estiver preenchida return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a1036e72a21edad105fbc7cbba7bd8bc7}{\index{ajuda.\+h@{ajuda.\+h}!comparar\+\_\+estados@{comparar\+\_\+estados}}
+\index{comparar\+\_\+estados@{comparar\+\_\+estados}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{comparar\+\_\+estados}]{\setlength{\rightskip}{0pt plus 5cm}int comparar\+\_\+estados (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{a, }
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{b}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a1036e72a21edad105fbc7cbba7bd8bc7}
+
+
+Função que compara a grelha de dois estados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 2} & estados \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O int 1 representa igualdade e o int 0 representa diferença 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a9ef095876aef5ebc17104a169aeec5e2}{\index{ajuda.\+h@{ajuda.\+h}!contraria@{contraria}}
+\index{contraria@{contraria}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{contraria}]{\setlength{\rightskip}{0pt plus 5cm}V\+A\+L\+O\+R contraria (
+\begin{DoxyParamCaption}
+\item[{V\+A\+L\+O\+R}]{v}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a9ef095876aef5ebc17104a169aeec5e2}
+
+
+Função returna o V\+A\+L\+O\+R contrario e sem ser F\+I\+X\+O. ex.\+: F\+I\+X\+O\+\_\+\+O -\/$>$ S\+O\+L\+\_\+\+X $\vert$$\vert$ S\+O\+L\+\_\+\+X -\/$>$ S\+O\+L\+\_\+\+O. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em um} & V\+A\+L\+O\+R \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+um V\+A\+L\+O\+R 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a4a36264eb48117d32fabea88bba272a2}{\index{ajuda.\+h@{ajuda.\+h}!puzzle\+\_\+valido@{puzzle\+\_\+valido}}
+\index{puzzle\+\_\+valido@{puzzle\+\_\+valido}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{puzzle\+\_\+valido}]{\setlength{\rightskip}{0pt plus 5cm}int puzzle\+\_\+valido (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a4a36264eb48117d32fabea88bba272a2}
+
+
+Função que chama todas as funções que testam a validade do puzzle e com base nos resultados destas decide se o puzzle è ou não vàlido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se for válido return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a58db0764a1c7edb36f2c793ff5b160a5}{\index{ajuda.\+h@{ajuda.\+h}!solucao\+\_\+puzzle@{solucao\+\_\+puzzle}}
+\index{solucao\+\_\+puzzle@{solucao\+\_\+puzzle}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{solucao\+\_\+puzzle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+S\+T\+A\+D\+O} solucao\+\_\+puzzle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a58db0764a1c7edb36f2c793ff5b160a5}
+
+
+Função que utiliza as funções de ajudas anteriores para chegar à solução do puzzle. 
+
+\begin{DoxyReturn}{Returns}
+O estado do puzzle resolvido 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_afbf6a9fed5fb8308570486fba383b0ed}{\index{ajuda.\+h@{ajuda.\+h}!valido\+\_\+diagonal@{valido\+\_\+diagonal}}
+\index{valido\+\_\+diagonal@{valido\+\_\+diagonal}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{valido\+\_\+diagonal}]{\setlength{\rightskip}{0pt plus 5cm}int valido\+\_\+diagonal (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_afbf6a9fed5fb8308570486fba383b0ed}
+
+
+Função que procura se ambas as funções que testam a validade do puzzle na diagonal devolvlem verdadeiro e em caso afirmativo devolve també verdadeiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se for válido return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_ade87ec2ee191ace3d6e396de013bc5b6}{\index{ajuda.\+h@{ajuda.\+h}!valido\+\_\+diagonal\+\_\+dir@{valido\+\_\+diagonal\+\_\+dir}}
+\index{valido\+\_\+diagonal\+\_\+dir@{valido\+\_\+diagonal\+\_\+dir}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{valido\+\_\+diagonal\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}int valido\+\_\+diagonal\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_ade87ec2ee191ace3d6e396de013bc5b6}
+
+
+Função que procura três peças iguais seguidas diagonalmente para testar se o puzzle è válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se for válido return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a979580be04792def60ffe64e4e6bfea3}{\index{ajuda.\+h@{ajuda.\+h}!valido\+\_\+diagonal\+\_\+esq@{valido\+\_\+diagonal\+\_\+esq}}
+\index{valido\+\_\+diagonal\+\_\+esq@{valido\+\_\+diagonal\+\_\+esq}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{valido\+\_\+diagonal\+\_\+esq}]{\setlength{\rightskip}{0pt plus 5cm}int valido\+\_\+diagonal\+\_\+esq (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a979580be04792def60ffe64e4e6bfea3}
+
+
+Função que procura três peças iguais seguidas diagonalmente para testar se o puzzle è válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se for válido return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_a903bac385e5ebcc39f30ade8c4550b37}{\index{ajuda.\+h@{ajuda.\+h}!valido\+\_\+horizontal@{valido\+\_\+horizontal}}
+\index{valido\+\_\+horizontal@{valido\+\_\+horizontal}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{valido\+\_\+horizontal}]{\setlength{\rightskip}{0pt plus 5cm}int valido\+\_\+horizontal (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_a903bac385e5ebcc39f30ade8c4550b37}
+
+
+Função que procura três peças iguais seguidas horizontalmente para testar se o puzzle è válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se for válido return 1, senão return 0; 
+\end{DoxyReturn}
+\hypertarget{ajuda_8h_aaf2beaaa8ce32ca7b5d939e01f70a0ba}{\index{ajuda.\+h@{ajuda.\+h}!valido\+\_\+vertical@{valido\+\_\+vertical}}
+\index{valido\+\_\+vertical@{valido\+\_\+vertical}!ajuda.\+h@{ajuda.\+h}}
+\subsubsection[{valido\+\_\+vertical}]{\setlength{\rightskip}{0pt plus 5cm}int valido\+\_\+vertical (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+S\+T\+A\+D\+O}}]{e}
+\end{DoxyParamCaption}
+)}}\label{ajuda_8h_aaf2beaaa8ce32ca7b5d939e01f70a0ba}
+
+
+Função que procura três peças iguais seguidas verticalmente para testar se o puzzle è válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & O Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se for válido return 1, senão return 0; 
+\end{DoxyReturn}

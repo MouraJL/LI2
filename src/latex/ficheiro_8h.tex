@@ -1,0 +1,92 @@
+\hypertarget{ficheiro_8h}{\section{ficheiro.\+h File Reference}
+\label{ficheiro_8h}\index{ficheiro.\+h@{ficheiro.\+h}}
+}
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}auxiliares.\+h\char`\"{}}\\*
+Include dependency graph for ficheiro.\+h\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} \hyperlink{ficheiro_8h_a4a47ef25e9050f1e2270c624c6b1f24f}{ler\+\_\+ficheiro} (int numero)
+\begin{DoxyCompactList}\small\item\em Função que lê um ficcheiro com informação relativa a um puzzle (E\+S\+T\+A\+D\+O) \end{DoxyCompactList}\item 
+int \hyperlink{ficheiro_8h_abca9cb4cbd351a63bf4279f107470e4a}{check\+\_\+file} (int i)
+\begin{DoxyCompactList}\small\item\em Função verifica se o ficheiro está vazio. \end{DoxyCompactList}\item 
+\hypertarget{ficheiro_8h_af810c8cb6926590f15249e0c2c4a7b54}{int {\bfseries verificar\+\_\+ficheiro} ()}\label{ficheiro_8h_af810c8cb6926590f15249e0c2c4a7b54}
+
+\item 
+\hypertarget{ficheiro_8h_a910b3ddcf70982cfa88586b95c7501dd}{int {\bfseries peca\+\_\+modificada} (char $\ast$query)}\label{ficheiro_8h_a910b3ddcf70982cfa88586b95c7501dd}
+
+\item 
+\hypertarget{ficheiro_8h_aa05c89334474bac7f9ba95b2565803b8}{void {\bfseries guardar\+\_\+string\+\_\+avancado} (char $\ast$query)}\label{ficheiro_8h_aa05c89334474bac7f9ba95b2565803b8}
+
+\item 
+\hypertarget{ficheiro_8h_a91f8b22ceb41ff89ec60b3264a855aff}{void {\bfseries apagar\+\_\+history} ()}\label{ficheiro_8h_a91f8b22ceb41ff89ec60b3264a855aff}
+
+\item 
+\hypertarget{ficheiro_8h_a2938ea81dc322a39c63e2f2fd8125aba}{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+D\+O} {\bfseries buscar\+\_\+ultimo\+\_\+movimento} ()}\label{ficheiro_8h_a2938ea81dc322a39c63e2f2fd8125aba}
+
+\item 
+\hypertarget{ficheiro_8h_a86fbff0aec610e85df315d7bfe27cd04}{void {\bfseries guardar\+\_\+current\+\_\+level} (char $\ast$query)}\label{ficheiro_8h_a86fbff0aec610e85df315d7bfe27cd04}
+
+\item 
+\hypertarget{ficheiro_8h_aba39b17133be10412a261b4027309545}{void {\bfseries username\+\_\+file} (char $\ast$str, \hyperlink{auxiliares_8h_aea518a91f2782bff4616f106a329bf81}{I\+D} current\+\_\+user)}\label{ficheiro_8h_aba39b17133be10412a261b4027309545}
+
+\item 
+\hypertarget{ficheiro_8h_a3bb7fc9e506673c14fda52372c28440d}{void {\bfseries salvar\+\_\+current\+\_\+user} (char user\mbox{[}$\,$\mbox{]})}\label{ficheiro_8h_a3bb7fc9e506673c14fda52372c28440d}
+
+\item 
+\hypertarget{ficheiro_8h_a83d7c981deadc095f4dd12c67e725e48}{void {\bfseries escrever\+\_\+username\+\_\+file} (char current\+\_\+user\mbox{[}$\,$\mbox{]}, char escrever\mbox{[}$\,$\mbox{]}, int onde)}\label{ficheiro_8h_a83d7c981deadc095f4dd12c67e725e48}
+
+\item 
+\hypertarget{ficheiro_8h_a0165f2273fad36bf3499dd839ae76d63}{void {\bfseries get\+\_\+id\+\_\+username} (\hyperlink{auxiliares_8h_aea518a91f2782bff4616f106a329bf81}{I\+D} current\+\_\+user)}\label{ficheiro_8h_a0165f2273fad36bf3499dd839ae76d63}
+
+\item 
+\hypertarget{ficheiro_8h_aede5f2e563b20f1537b2997efc8c5ad9}{void {\bfseries level\+\_\+atual} (char str\mbox{[}$\,$\mbox{]})}\label{ficheiro_8h_aede5f2e563b20f1537b2997efc8c5ad9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definição de funções que lêm/modifica ancoras e os ficheiros de texto nas quais estas estão guardadas
+
+Definição de funções que lêm/modifica ficheiros txt 
+
+\subsection{Function Documentation}
+\hypertarget{ficheiro_8h_abca9cb4cbd351a63bf4279f107470e4a}{\index{ficheiro.\+h@{ficheiro.\+h}!check\+\_\+file@{check\+\_\+file}}
+\index{check\+\_\+file@{check\+\_\+file}!ficheiro.\+h@{ficheiro.\+h}}
+\subsubsection[{check\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}int check\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{ficheiro_8h_abca9cb4cbd351a63bf4279f107470e4a}
+
+
+Função verifica se o ficheiro está vazio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & O numero do puzzle cujo ficheiro a função vai tentar ler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Se estiver vazio return 0, senão return 1; 
+\end{DoxyReturn}
+\hypertarget{ficheiro_8h_a4a47ef25e9050f1e2270c624c6b1f24f}{\index{ficheiro.\+h@{ficheiro.\+h}!ler\+\_\+ficheiro@{ler\+\_\+ficheiro}}
+\index{ler\+\_\+ficheiro@{ler\+\_\+ficheiro}!ficheiro.\+h@{ficheiro.\+h}}
+\subsubsection[{ler\+\_\+ficheiro}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+S\+T\+A\+D\+O} ler\+\_\+ficheiro (
+\begin{DoxyParamCaption}
+\item[{int}]{numero}
+\end{DoxyParamCaption}
+)}}\label{ficheiro_8h_a4a47ef25e9050f1e2270c624c6b1f24f}
+
+
+Função que lê um ficcheiro com informação relativa a um puzzle (E\+S\+T\+A\+D\+O) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & O numero do puzzle cujo ficheiro a função vai ler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O estado correspondente à informação guardada no ficheiro 
+\end{DoxyReturn}
