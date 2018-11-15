@@ -4,6 +4,9 @@ EXECUTAVEL=GandaGalo
 
 install: $(EXECUTAVEL)
 	sudo cp $(EXECUTAVEL) /usr/lib/cgi-bin
+	make imagens
+	make ficheiros
+	make puzzles
 	touch install
 
 $(EXECUTAVEL): interface.o estado.o ajuda.o ficheiro.o auxiliares.o resolver.o
@@ -32,7 +35,8 @@ doc:
 
 clean:
 	rm -rf *.o $(EXECUTAVEL) Doxyfile latex html install
-	sudo rm -rf /var/www/html/puzzles/*
+	sudo rm -rf /var/www/html/puzzles
+	sudo rm -rf /var/www/html/imagens
 
 estado.o: estado.c estado.h
 ajuda.o: estado.h auxiliares.h ajuda.c ajuda.h ficheiro.c ficheiro.h
